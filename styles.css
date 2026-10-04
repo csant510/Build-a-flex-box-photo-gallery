@@ -36,7 +36,7 @@ header {
     border-radius: 10px; /* This adds a border radius to the images in the gallery */
 }
 
-gallery::after{
+.gallery::after{
     content:""; /* This adds content to the images in the gallery */  
     width: 350px; /* This sets the width of the images in the gallery */
 }
