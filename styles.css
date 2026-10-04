@@ -1,6 +1,9 @@
+*{
+    box-sizing: border-box;
+}
 .gallery {
     width: 50%;
-    border: 1px solid red;
+    border: 5px solid red;
 }
 
 img{
