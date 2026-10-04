@@ -1,3 +1,42 @@
 *{
     box-sizing: border-box;/* This sets pictires with in the width of the border gallery */
 }
+
+body {
+    font-family: sans-serif; /* This sets the font for the body of the page */
+    background-color: #f5f6f7 ; /* This sets the background color of the page */
+    margin: 0; /* This removes the default margin of the body */
+}
+
+header {
+    text-transform: uppercase; /* This sets the text in the header to uppercase */
+    text-align: center;
+    padding: 32px; /* This adds padding to the header */
+    background-color: #0a0a23; /* This sets the background color of the header */
+    color: #fff; /* This sets the text color of the header */
+    border-bottom: 4px solid #fbd347; /* This adds a border to the bottom of the header */
+}
+.gallery {
+    display: flex; /* This sets the display of the gallery to flex */
+    flex-direction: row; /* This sets the direction of the flex items to row */
+    flex-wrap: wrap; /* This allows the flex items to wrap to the next line */
+    justify-content: center; /* This centers the flex items horizontally */
+    align-items: center; /* This centers the flex items vertically */
+    padding: 20px 10px; /* This adds padding to the gallery */
+    max-width: 1400px; /* This sets the maximum width of the gallery */
+    margin: 0 auto; /* This centers the gallery horizontally */
+    gap: 16px; /* This adds a gap between the flex items */
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px; /* This sets the maximum width of the images in the gallery */    
+    height: 300px;
+    object-fit: cover; /* This sets the object-fit property of the images in the gallery keeps the reslution of the orgin */
+    border-radius: 10px; /* This adds a border radius to the images in the gallery */
+}
+
+gallery::after{
+    content:""; /* This adds content to the images in the gallery */  
+    width: 350px; /* This sets the width of the images in the gallery */
+}
